@@ -14,20 +14,21 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
-    text-align: center; /* Center the title and "Add" line */
+    text-align: center;
 }
 
 .input-container {
     margin-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the "Add" line */
+    justify-content: center;
 }
 
 input {
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px 0 0 5px; /* Rounded corners only on the left side */
+
 }
 
 button {
@@ -35,7 +36,7 @@ button {
     color: #fff;
     border: none;
     padding: 10px 15px;
-    border-radius: 4px;
+    border-radius: 0 5px 5px 0; /* Rounded corners only on the right side */
     cursor: pointer;
 }
 
@@ -49,7 +50,7 @@ button:hover {
 }
 
 .tasks-container {
-    text-align: left; /* Align text and checkboxes to the left */
+    text-align: left;
     margin-top: 20px;
 }
 
@@ -57,7 +58,7 @@ button:hover {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    overflow-wrap: break-word; /* Break long words if they don't fit */
+    overflow-wrap: break-word;
     position: relative;
 }
 
@@ -82,14 +83,14 @@ input[type="checkbox"]:checked + .task-text {
 }
 
 input[type="checkbox"]:checked {
-    background-color: #4caf50; /* Change the background color when checked */
-    border-color: #4caf50; /* Change the border color when checked */
+    background-color: #4caf50; /* Change the color when checked */
+    border-color: #4caf50;
 }
 
 
 .task-text {
     flex-grow: 1;
-    word-wrap: break-word; /* Ensure long text wraps */
+    word-wrap: break-word;
 }
 
 .remove-button {
@@ -99,12 +100,12 @@ input[type="checkbox"]:checked {
     padding: 8px;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
+    transition: background-color 0.3s ease, opacity 0.3s ease;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 0;
-    opacity: 0.3; /* Initial opacity */
+    opacity: 0.3;
     display: none;
 }
 
@@ -114,7 +115,7 @@ input[type="checkbox"]:checked {
 
 .remove-button:hover {
     background-color: #ff4d4d;
-    opacity: 1; /* Full opacity on hover */
+    opacity: 1;
 }
 
 
