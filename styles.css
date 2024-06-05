@@ -32,15 +32,20 @@ input {
 }
 
 button {
-    background-color: #4caf50;
-    color: #fff;
     border: none;
     padding: 10px 15px;
     border-radius: 0 5px 5px 0; /* Rounded corners only on the right side */
     cursor: pointer;
 }
 
-button:hover {
+
+.add-button {
+    color: #fff;
+    background-color: #4caf50;
+    border-radius: 0 5px 5px 0;
+}
+
+.add-button:hover {
     background-color: #45a049;
 }
 
@@ -90,7 +95,8 @@ input[type="checkbox"]:checked {
 
 .task-text {
     flex-grow: 1;
-    word-wrap: break-word;
+    word-break: break-word;    
+    padding-right: 40px; /* Add padding so that delete button doesn't overlap taxr */
 }
 
 .remove-button {
@@ -125,4 +131,21 @@ input[type="checkbox"]:checked {
 
 .task:hover .remove-button {
     display: inline-block;
+}
+
+
+.delete-all-button {
+    background-color: transparent;
+    color: #999;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.delete-all-button:hover {
+    background-color: transparent;
+    color: #000;
 }
