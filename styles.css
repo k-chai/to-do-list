@@ -127,3 +127,19 @@ input[type="checkbox"]:checked {
 .task:hover .remove-button {
     display: inline-block;
 }
+
+.delete-all-button {
+    background-color: transparent;
+    color: #999;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.delete-all-button:hover {
+    background-color: transparent;
+    color: #000;
+}
