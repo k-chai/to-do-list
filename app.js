@@ -43,7 +43,6 @@ taskInput.addEventListener('keyup', function(event) {
     }
 });
 
-
 // Function to delete all tasks
 function deleteAllTasks() {
     tasksContainer.innerHTML = '';

@@ -38,6 +38,7 @@ button {
     cursor: pointer;
 }
 
+
 .add-button {
     color: #fff;
     background-color: #4caf50;
@@ -47,7 +48,6 @@ button {
 .add-button:hover {
     background-color: #45a049;
 }
-
 
 .separator-line {
     border-top: 1px solid #ccc;
@@ -132,6 +132,7 @@ input[type="checkbox"]:checked {
 .task:hover .remove-button {
     display: inline-block;
 }
+
 
 .delete-all-button {
     background-color: transparent;
