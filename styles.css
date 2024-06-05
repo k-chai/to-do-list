@@ -32,17 +32,22 @@ input {
 }
 
 button {
-    background-color: #4caf50;
-    color: #fff;
     border: none;
     padding: 10px 15px;
     border-radius: 0 5px 5px 0; /* Rounded corners only on the right side */
     cursor: pointer;
 }
 
-button:hover {
+.add-button {
+    color: #fff;
+    background-color: #4caf50;
+    border-radius: 0 5px 5px 0;
+}
+
+.add-button:hover {
     background-color: #45a049;
 }
+
 
 .separator-line {
     border-top: 1px solid #ccc;
